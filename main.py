@@ -1,4 +1,6 @@
-from utils import load_number_from_json
+from pprint import pprint
+from utils import load_questions_from_json, draw_table
 
 
-print(load_number_from_json()["Транспорт"]["100"]["question"])
+qustions = load_questions_from_json()
+draw_table(qustions)
